@@ -316,7 +316,7 @@ ACCOUNT_FORMS = {"signup": "python_code_interview.users.forms.UserSignupForm"}
 SOCIALACCOUNT_ADAPTER = "python_code_interview.users.adapters.SocialAccountAdapter"
 # https://docs.allauth.org/en/latest/socialaccount/configuration.html
 SOCIALACCOUNT_FORMS = {
-    "signup": "python_code_interview.users.forms.UserSocialSignupForm"
+    "signup": "python_code_interview.users.forms.UserSocialSignupForm",
 }
 # django-compressor
 # ------------------------------------------------------------------------------
