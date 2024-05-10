@@ -521,6 +521,22 @@ prompt-toolkit = ">=3.0.36"
 testing = ["pytest (>=7.2.1)", "pytest-cov (>=4.0.0)", "tox (>=4.4.3)"]
 
 [[package]]
+name = "collectfast"
+version = "2.2.0"
+description = "A Faster Collectstatic"
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "Collectfast-2.2.0-py2.py3-none-any.whl", hash = "sha256:e716b2234ab50b5f1010b0d78c3fae8c6aebdb8b7c66ef5568503c33c1a5e19a"},
+    {file = "Collectfast-2.2.0.tar.gz", hash = "sha256:2f6abc8cab7ec5114a7a9a3660ab629ec142556957220aa82857dc9b4381490d"},
+]
+
+[package.dependencies]
+Django = ">=2.2"
+django-storages = ">=1.6"
+typing-extensions = "*"
+
+[[package]]
 name = "colorama"
 version = "0.4.6"
 description = "Cross-platform colored terminal text."
@@ -1156,6 +1172,27 @@ humanize = "*"
 prometheus-client = ">=0.8.0"
 pytz = "*"
 tornado = ">=5.0.0,<7.0.0"
+
+[[package]]
+name = "gunicorn"
+version = "22.0.0"
+description = "WSGI HTTP Server for UNIX"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "gunicorn-22.0.0-py3-none-any.whl", hash = "sha256:350679f91b24062c86e386e198a15438d53a7a8207235a78ba1b53df4c4378d9"},
+    {file = "gunicorn-22.0.0.tar.gz", hash = "sha256:4a0b436239ff76fb33f11c07a16482c521a7e09c1ce3cc293c2330afe01bec63"},
+]
+
+[package.dependencies]
+packaging = "*"
+
+[package.extras]
+eventlet = ["eventlet (>=0.24.1,!=0.36.0)"]
+gevent = ["gevent (>=1.4.0)"]
+setproctitle = ["setproctitle"]
+testing = ["coverage", "eventlet", "gevent", "pytest", "pytest-cov"]
+tornado = ["tornado (>=0.2)"]
 
 [[package]]
 name = "h11"
@@ -3273,4 +3310,4 @@ watchdog = ["watchdog (>=2.3)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "3.12.0"
-content-hash = "88367c3b7787b74dc277d2b61dbdfb4c914b829ca431672abc9091a315e3ca53"
+content-hash = "e3b9fd5e812f1446ccfba9e9c3e04454b24269e16e2aff1503d581cd2b5aaead"
