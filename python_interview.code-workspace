@@ -1,0 +1,92 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"extensions": {
+		"recommendations": [
+			"ms-vscode-remote.remote-containers",
+			"codium.codium",
+			"bibhasdn.django-html",
+			"ms-azuretools.vscode-docker",
+			"ms-python.black-formatter",
+			"ms-vsliveshare.vsliveshare",
+			"ms-python.mypy-type-checker",
+			"ms-python.flake8",
+			"ms-python.vscode-pylance",
+			"ms-python.pylint",
+			"ms-python.python",
+			"mtxr.sqltools",
+			"donjayamanne.python-environment-manager",
+			"postman.postman-for-vscode",
+			"kevinrose.vsc-python-indent",
+			"ms-vscode-remote.remote-wsl"
+		]
+	},
+	"settings": {
+		"files.associations": {
+			"**/*.html": "django-html"
+		},
+		"python.terminal.activateEnvironment": true,
+		"python.languageServer": "Default",
+		"editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit",
+      "source.fixAll": "explicit",
+      "source.removeUnusedImports": "explicit"
+    },
+		"editor.formatOnSave": true,
+		"python.envFile": "${workspaceFolder}/.env",
+		"terminal.integrated.env.linux": {
+			"DJANGO_READ_DOT_ENV_FILE": "True"
+		},
+		"terminal.integrated.env.osx": {
+			"DJANGO_READ_DOT_ENV_FILE": "True"
+		},
+		"terminal.integrated.env.windows": {
+			"DJANGO_READ_DOT_ENV_FILE": "True"
+		},
+		"git.terminalGitEditor": false,
+		"python.testing.pytestArgs": [
+			"tests"
+		],
+		"python.testing.unittestEnabled": false,
+		"python.testing.pytestEnabled": true,
+		"[python]": {
+			"editor.defaultFormatter": "ms-python.black-formatter"
+		},
+		"python.formatting.provider": "none",
+		"sqltools.connections": [
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Debugging",
+				"type": "debugpy",
+				"request": "launch",
+				"program": "${workspaceFolder}/manage.py",
+				"args": [
+					"debugging"
+				],
+				"django": true,
+				"justMyCode": true,
+				"envFile": "${workspaceFolder}/.env"
+			},
+			{
+				"name": "runserver",
+				"type": "debugpy",
+				"request": "launch",
+				"program": "${workspaceFolder}/manage.py",
+				"args": [
+					"runserver"
+				],
+				"django": true,
+				"justMyCode": true,
+				"envFile": "${workspaceFolder}/.env"
+			},
+		],
+		"compounds": []
+	}
+}
