@@ -34,7 +34,7 @@ drf-spectacular = "0.27.2"
 [tool.poetry.group.dev.dependencies]
 werkzeug = { extras = ["watchdog"], version = "^3.0.0" }
 ipdb = "0.13.13"
-psycopg = { extras = ["c"], version = "3.1.18" } 
+psycopg = { extras = ["c"], version = "3.1.18" }
 watchfiles = "0.21.0"
 mypy = "1.7.1"
 django-stubs = { extras = ["compatible-mypy"], version = "4.2.7" }

@@ -1,4 +1,4 @@
--r base.txt
+-r production.txt
 
 alabaster==0.7.16
 anyio==4.3.0
