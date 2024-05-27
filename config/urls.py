@@ -10,6 +10,7 @@ from django.views.generic import TemplateView
 from drf_spectacular.views import SpectacularAPIView
 from drf_spectacular.views import SpectacularSwaggerView
 from rest_framework.authtoken.views import obtain_auth_token
+from blend.views import StockSearchViewSet
 
 urlpatterns = [
     path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),
@@ -23,6 +24,7 @@ urlpatterns = [
     # User management
     path("users/", include("python_code_interview.users.urls", namespace="users")),
     path("accounts/", include("allauth.urls")),
+    path("stock/", include("blend.urls")),
     # Your stuff: custom urls includes go here
     # ...
     # Media files
